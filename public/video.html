@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Video Chat - Stanagle: Talk with Strangers!</title> <!-- More descriptive title -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Join Stanagle to talk with random strangers online, find new friends, share interests and make friends. meet with random peoples!">
+  <meta name="keywords" content="Stanagle, Chat with Strangers, Online Chat, Make New Friends ,Meet New Friends, talk to strangers , Safe Chatting, Online Conversation, Social Platform"> <!-- Relevant keywords -->
+  <link rel="icon" href="favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/stanaglehead.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/phone.css" rel="stylesheet" />
+  <!-- Google Analytics and Ads scripts -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JEE73QG0DL');
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <!-- top bar -->
+    <div id="top-bar">
+      <div id="logo">
+        <img src="assets\backgroundlogo.png" alt="Stanagle">
+      </div>
+      <div id="top-right">
+        <div id="peopleOnline">
+          <p><span>0</span>+ online</p>
+        </div>
+        <!-- <button></button> -->
+      </div>
+    </div>
+
+    <div id="videos">
+      <div id="peer">
+        <video class="video-player mirror" id="video-peer" autoplay playsinline></video>
+        <div id="peer-video-loader"></div>
+        <!-- <img src="/assets\backgroundlogo.png" alt="Stanagle" id="watermark"> -->
+        <img src="favicon/Stanaglebottom.png" alt="Stanagle" id="watermark">
+        <button id="report-btn" title="Report">
+
+        </button>
+
+      </div>
+      <div id="self">
+        <video class="video-player mirror" id="video-self" autoplay playsinline muted="muted"></video>
+        <button id="switch-camera-btn" title="Flip Camera">
+
+        </button>
+
+      </div>
+    </div>
+
+    <div id="message-area">
+      <div id="messages"></div>
+      <div id="typing" style="display: none; color: grey; font-style: italic;" class="message">Stranger is typing...</div>
+    </div>
+
+
+    <div id="input-area">
+      <button class="button" id="skip-btn">Skip<span>Esc</span></button>
+      <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off" />
+      <button class="button" id="send-btn">Send<span>Enter</span></button>
+    </div>
+  </div>
+
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/video.js" type="module"></script>
+
+</body>
+
+</html>

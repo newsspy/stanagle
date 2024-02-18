@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Chat - Stanagle: Chat with Strangers!</title>
+  <!-- <link rel="icon" href="img/favicon.png"/> -->
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Join Stanagle to talk with random strangers online, find new friends, share interests and make friends. meet with random peoples!">
+  <meta name="keywords" content="Stanagle, Chat with Strangers, Online Chat, Make New Friends ,talk to girls , Meet New Friends, talk to strangers , Safe Chatting, Online Conversation, Social Platform"> <!-- Relevant keywords -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/chat.css"/>
+  <link rel="stylesheet" href="css/chat-phone.css"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/stanaglehead.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="favicon/msapplication-TileColor" content="#da532c">
+  <!-- <meta name="favicon/theme-color" content="#333333"> -->
+</head>
+
+<body>
+  <div id="main">
+    <!-- top bar -->
+    <div id="top-bar">
+      <div id="logo">
+        <img src="/assets/backgroundlogo.png" alt="stanagle.com" width="280px">
+      </div>
+      <div id="top-right">
+        <div id="peopleOnline">
+          <p><span>0</span>+ online now</p>
+        </div>
+        <!-- <button id="feedback-btn" class="button">Provide Feedback</button> -->
+      </div>
+    </div>
+
+    <!-- message area -->
+    <div id="message-area">
+      <div id="messages"></div>
+      <div id="typing" style="display: none" class="message">Stranger is typing...</div>
+    </div>
+
+    <!-- input area -->
+    <div id="input-area">
+      <button class="button" id="skip-btn">Skip<span>Esc</span></button>
+      <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off" />
+      <button class="button" id="send-btn">Send<span>Enter</span></button>
+    </div>
+  </div>
+
+
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/chat.js" type="module"></script>
+</body>
+
+</html>
