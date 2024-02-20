@@ -1,6 +1,5 @@
 import express from 'express'
 import { WebSocket, WebSocketServer } from 'ws'
-import db from './db/sqlite.js'
 
 const SERVER_PORT = process.env.SERVER_PORT=8080;
 
