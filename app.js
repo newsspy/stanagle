@@ -1,7 +1,7 @@
 import express from 'express'
 import { WebSocket, WebSocketServer } from 'ws'
 
-const SERVER_PORT = process.env.SERVER_PORT=8080;
+const SERVER_PORT = process.env.SERVER_PORT=8080
 
 
 Array.prototype.random = function () {
@@ -48,7 +48,7 @@ const port = SERVER_PORT
 app.use(express.static('./public', { extensions: ['html'] }))
 
 const server = app.listen(port, '0.0.0.0', () => {
-  console.log(`Listening on port ${PORT}`)
+  console.log(`Listening on port ${port}`)
 })
 
 const wss = new WebSocketServer({ server })
