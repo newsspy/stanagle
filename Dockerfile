@@ -1,1 +1,1 @@
-RUN npm install -r requirements.txt
+RUN npm install
