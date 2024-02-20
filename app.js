@@ -1,7 +1,7 @@
 import express from 'express'
 import { WebSocket, WebSocketServer } from 'ws'
 
-const SERVER_PORT = process.env.SERVER_PORT="http://stanagle.com"
+const SERVER_PORT = process.env.SERVER_PORT="ws://stanagle.com:8080"
 
 
 Array.prototype.random = function () {
