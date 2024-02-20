@@ -1,3 +1,1 @@
-npm init
-npm install express nodemon socket.io 
-npm start app.js
+npm install
