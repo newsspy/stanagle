@@ -3,9 +3,6 @@ import { WebSocket, WebSocketServer } from 'ws'
 
 const SERVER_PORT = process.env.SERVER_PORT=8080;
 
-if (!SERVER_PORT) {
-  throw new Error('Forgot to initialze some variables')
-}
 
 Array.prototype.random = function () {
   return this[Math.floor(Math.random() * this.length)]
@@ -51,18 +48,13 @@ const port = SERVER_PORT
 app.use(express.static('./public', { extensions: ['html'] }))
 
 const server = app.listen(port, '0.0.0.0', () => {
-  console.log(`Listening on port ${port}`)
+  console.log(`Listening on port ${"ws://stanagle.onrender.com"}`)
 })
 
 const wss = new WebSocketServer({ server })
 
 app.get('/online', (_, res) => {
   res.send({ online: wss.clients.size })
-})
-
-app.post('/feedback', express.json(), async (req, res) => {
-  await db.insertFeedback({ feedback: req.body.feedback })
-  res.sendStatus(200)
 })
 
 const sleep = (x) => new Promise((r) => setTimeout(() => r(), x))
