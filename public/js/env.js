@@ -1,1 +1,1 @@
-export const WEBSOCKET_URL = "ws://stanagle.onrender.com:8080"
+export const WEBSOCKET_URL = "ws://stanagle.com:8080"
