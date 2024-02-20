@@ -1,1 +1,1 @@
-RUN npm install
+npm install
