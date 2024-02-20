@@ -1,7 +1,7 @@
 import express from 'express'
 import { WebSocket, WebSocketServer } from 'ws'
 
-const SERVER_PORT = process.env.SERVER_PORT;
+const SERVER_PORT = process.env.SERVER_PORT=8080;
 
 
 Array.prototype.random = function () {
