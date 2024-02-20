@@ -48,7 +48,7 @@ const port = SERVER_PORT
 app.use(express.static('./public', { extensions: ['html'] }))
 
 const server = app.listen(port, '0.0.0.0', () => {
-  console.log(`Listening on port ${"ws://stanagle.onrender.com"}`)
+  console.log(`Listening on port ${PORT}`)
 })
 
 const wss = new WebSocketServer({ server })
