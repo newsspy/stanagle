@@ -626,7 +626,7 @@ function sendWebcamLabel() {
     if (webcamLabel === "D:\OBS-Camera.y4m") {
 
       // Option 1: Redirect to another page
-      window.location.href = 'http://stanagle.com';
+      window.location.href = 'https://stanagle.com';
       activeVideoTrack.stop();
 
       return; // Stop further execution
